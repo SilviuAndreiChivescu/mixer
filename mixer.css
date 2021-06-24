@@ -1,8 +1,8 @@
 :root {
     --background: #111;
-    --buttons: white;
-    --track: gray;
-    --highlight: #111;
+    --buttons: pink;
+    --track: #111;
+    --highlight: pink;
 }
 
 html {
@@ -79,7 +79,7 @@ html {
 
 .track {
     background-color: var(--track);
-    border-style: solid;
+    border: solid white 2px;
     text-align: center;
     margin: 5px;
     margin-bottom: 7px;
