@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TTS Mixer</title>
+    <link rel="stylesheet" type="text/css" href="mixer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div align="center">
+        <button id="playall" class="mainButton" disabled="true">Play</button>
+    </div>
+
+    <br>
+    <div id="songseek" align="center">
+        <p id="currtime">00:00</p>
+        <input type="range" id="timeelapsed" min="0" step="1" max="3" value="0">
+        <p id="endtime">00:00</p>
+    </div>
+
+    <div id="alltracks">
+        <div class="track" id="track1">
+            <audio id="primarytrack" preload="auto"><source src="gec/808.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>808</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track2">
+            <audio preload="auto"><source src="gec/hihats.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Hi Hats</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track3">
+            <audio preload="auto"><source src="gec/kick.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Kick</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track4">
+            <audio preload="auto"><source src="gec/rim.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Rim</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track5">
+            <audio preload="auto"><source src="gec/snare.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Snare</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track6">
+            <audio preload="auto"><source src="gec/synthvocal.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Synth Vox</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track7">
+            <audio preload="auto"><source src="gec/vocals.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Vocals</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+        <div class="track" id="track8">
+            <audio preload="auto"><source src="gec/endingfuckery.mp3" type="audio/mpeg">Not Supported</audio>
+            <h2>Ending</h2>
+            <h3>Volume</h3>
+            <input type="range" class="volumeclass" min="0" max="1" step="0.1" value="1" orient="vertical" />
+            <br>
+            <h3>Pan</h3>
+            <input type="range" class="pannerclass" min="-1" max="1" step="0.1" value="0" />
+            <br>
+            <button class="mute">Mute</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="masterbuttons">
+        <div align="center">
+            <button id="centerpan" class="mainButton">Center Panning</button>
+        </div>
+        <div align="center">
+            <button id="muteall" class="mainButton" value="muteall">Mute All</button>
+        </div>
+    </div>
+
+
+
+    <script src="/mixer.js" async defer></script>
+</body>
+
+</html>

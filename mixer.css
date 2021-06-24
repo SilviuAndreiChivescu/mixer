@@ -1,0 +1,127 @@
+:root {
+    --background: #111;
+    --buttons: white;
+    --track: gray;
+}
+
+html {
+    font-family: 'Mukta', sans-serif;
+    background: var(--background);
+}
+
+.mainButton {
+    width: 200px;
+    height: 50px;
+    background-color: var(--buttons);
+    font-size: 25px;
+    color: var(--background);
+    border: 0px;
+    box-shadow: 0 0 20 0 black;
+    cursor: pointer;
+    -webkit-transition: opacity 300ms ease;
+    -ms-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+    opacity: 100%;
+}
+
+.mute {
+    width: 80px;
+    height: 30px;
+    background-color: var(--buttons);
+    font-size: 18px;
+    color: var(--background);
+    border: 0px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 20 0 black;
+}
+
+.mainButton:hover,
+.mute:hover {
+    -webkit-transition: opacity 300ms ease;
+    -ms-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+    opacity: 70%;
+}
+
+#playall {
+    margin-bottom: -20px;
+}
+
+#muteall {
+    margin-top: 15px;
+}
+
+#centerpan {
+    margin-top: 15px;
+}
+
+#currtime,
+#endtime {
+    display: inline-block;
+    padding: 2px;
+    width: 60px;
+}
+
+#timeelapsed {
+    display: inline-block;
+}
+
+#alltracks {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.track {
+    background-color: var(--track);
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 7px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.masterbuttons {
+    display: block;
+}
+
+h2 {
+    height: 35px;
+    border: 2px;
+    border-bottom-style: solid;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    margin: 0px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    vertical-align: 40%;
+}
+
+.volumeclass {
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 100px;
+}
+
+.pannerclass {
+    width: 80px;
+}
+
+#timeelapsed {
+    width: 300px;
+}

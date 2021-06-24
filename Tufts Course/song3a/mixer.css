@@ -1,0 +1,132 @@
+#playall {
+    width: 200px;
+    height: 50px;
+    background-color: #3172AE;
+    font-family: raleway;
+    font-size: 25px;
+    color: white;
+    border: 0px;
+    border-color: #3172AE;
+    margin-bottom: -20px;
+
+}
+
+#muteall {
+    width: 200px;
+    height: 50px;
+    background-color: #3172AE;
+    font-family: raleway;
+    font-size: 25px;
+    color: white;
+    border: 0px;
+    border-color: #3172AE;
+    margin-top: 15px;
+
+}
+
+#centerpan {
+    width: 200px;
+    height: 50px;
+    background-color: #3172AE;
+    font-family: raleway;
+    font-size: 25px;
+    color: white;
+    border: 0px;
+    border-color: #3172AE;
+    margin-top: 15px;
+
+}
+
+#currtime {
+	display: inline-block;
+    padding: 2px;
+    width: 60px;
+}
+
+#timeelapsed {
+	display: inline-block;
+}
+
+#endtime {
+	display: inline-block;
+    padding: 2px;
+    width: 60px;
+}
+
+
+#alltracks {
+	width: 670px;
+	margin: 0 auto;
+}
+
+
+.muteclass {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    font-family: raleway;
+    font-size: 18px;
+    color: #3172AE;
+    border: 0px;
+    margin-bottom: 5px;
+}
+
+.trackclass {
+	background-color: #3172AE;
+    border: 2px;
+    border-color: #3172AE;
+    border-radius: 2px;
+    border-style: solid;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 7px;
+}
+
+.masterbuttons {
+    display: block;
+}
+
+h2 {
+    height: 35px;
+    border: 2px;
+    border-bottom-style: solid;
+    font-family: raleway;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    margin: 0px;
+}
+
+p {
+	font-family: raleway;
+	font-weight: 500;
+	font-size: 16px;
+	color: #3172AE;
+	vertical-align: 40%;
+}
+.volumeclass {
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 100px;
+}
+
+.pannerclass {
+	width: 80px;
+}
+
+#timeelapsed {
+	width: 300px;
+}
+
+body {
+    font-family: quicksand;
+}
