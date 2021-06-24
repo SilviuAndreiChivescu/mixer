@@ -2,6 +2,7 @@
     --background: #111;
     --buttons: white;
     --track: gray;
+    --highlight: #111;
 }
 
 html {
@@ -22,6 +23,7 @@ html {
     -ms-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
     opacity: 100%;
+    border-radius: 3px;
 }
 
 .mute {
@@ -32,7 +34,7 @@ html {
     color: var(--background);
     border: 0px;
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 20 0 black;
 }
 
@@ -82,10 +84,10 @@ html {
     margin: 5px;
     margin-bottom: 7px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.masterbuttons {
+.mainButtons {
     display: block;
 }
 
@@ -124,4 +126,29 @@ p {
 
 #timeelapsed {
     width: 300px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: var(--track);
+}
+
+#timeelapsed {
+    background-color: var(--background);
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    color: var(--highlight);
+}
+
+
+/** FF*/
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--highlight);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: white;
 }
